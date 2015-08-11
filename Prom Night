@@ -6,6 +6,7 @@
 T = int(input("Enter no. of test cases: ")) #Get no of test cases
 result = []
 
+#Match making function 
 def match(M, N, bheight, gheight):
     count = 0
     mod = 0
@@ -27,8 +28,8 @@ def match(M, N, bheight, gheight):
 
 for t in range (1, T+1):
     n = input("Enter no. of boys and girls respectively: ")
-    M = int(n[0]) 
-    N = int(n[2])
+    M = int(n[0])  #No. of boys
+    N = int(n[2])  #No. of girls
     height1 = []
     height2 = []
     bheight = []
@@ -36,15 +37,10 @@ for t in range (1, T+1):
     num_array = []
 
     #Get user input for values and store in array bheight
-    '''for h1 in range (1, M+1):
-        height1 = input("Enter height of boy %r (%r): " %(h1, t))
-        bheight.append(int(height1))'''
     height1 = input()
     bheight.append(int(height1.split())
+    
     #Get user input for values and store in array gheight
-    '''for h2 in range (1, N+1):
-        height2 = input("Enter height of girl %r (%r): " %(h2, t))
-        gheight.append(int(height2))'''
     height2 = input()
     gheight.append(int(height2.split())
 
@@ -59,4 +55,3 @@ for t in range (1, T+1):
 #Print result of test cases(in order)
 for each in result:
     print("%s" %each)
-    
